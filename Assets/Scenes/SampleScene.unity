@@ -185,6 +185,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 418456, guid: 4f33094af56104f43a3d8343baaf5baf, type: 3}
   m_PrefabInstance: {fileID: 21715291}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &34260616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 34260617}
+  - component: {fileID: 34260618}
+  m_Layer: 0
+  m_Name: UiLogicHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &34260617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34260616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6888288, y: 1.1250066, z: 0.8812877}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &34260618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34260616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f474743d06cec4680a09deeede619a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiHandler: {fileID: 740176489}
+  houseInfoTitle: {fileID: 168780953}
+  houseInfoDescription: {fileID: 2003439013}
 --- !u!1001 &88640376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2316,13 +2363,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9923f112c9f41d9bff350a326b459d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xSpeed: 5
-  zSpeed: 5
+  xSpeed: 10
+  zSpeed: 10
   keyboardSensitivity: 0.5
-  jumpSpeed: 10
+  jumpSpeed: 2
   rb: {fileID: 767051590}
-  horizontalSpeed: 10
-  verticalSpeed: 10
+  horizontalSpeed: 1
+  verticalSpeed: 1
 --- !u!4 &767051589 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6788538757290762322, guid: ad4137f595ec8e2449cacca9df7d3735, type: 3}
@@ -2836,8 +2883,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 767051589}
-  distance: 5
-  height: 2
+  distance: 3
+  height: 1
 --- !u!1 &975087496
 GameObject:
   m_ObjectHideFlags: 0
@@ -4332,7 +4379,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 126530, guid: d8c4bc004abb4fb428be3467211cea9c, type: 3}
       propertyPath: m_Name
-      value: building_2
+      value: InteractableHouse
       objectReference: {fileID: 0}
     - target: {fileID: 407188, guid: d8c4bc004abb4fb428be3467211cea9c, type: 3}
       propertyPath: m_RootOrder
@@ -4393,6 +4440,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 407188, guid: d8c4bc004abb4fb428be3467211cea9c, type: 3}
   m_PrefabInstance: {fileID: 1473199876}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1473199878 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 126530, guid: d8c4bc004abb4fb428be3467211cea9c, type: 3}
+  m_PrefabInstance: {fileID: 1473199876}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1473199879
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473199878}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7314699, y: 0.964415, z: 3.292545}
+  m_Center: {x: -0.13999255, y: 0.4822075, z: 0.11863856}
+--- !u!114 &1473199880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473199878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6859e7eebd8449c2bd681ff6f68960d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Movie Theatre
+  description: Watch your favorite movies here!
 --- !u!1001 &1475745656
 PrefabInstance:
   m_ObjectHideFlags: 0
