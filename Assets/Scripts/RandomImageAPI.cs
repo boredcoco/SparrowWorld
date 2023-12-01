@@ -7,8 +7,7 @@ using UnityEngine.UI;
 
 public class RandomImageAPI : MonoBehaviour
 {
-    [SerializeField] private string category = "city";
-    private const string apiUrl = "https://picsum.photos/200/300"; 
+    [SerializeField] private string apiUrl = "https://picsum.photos/200/300"; 
     private Sprite uiSprite;
 
     private void Start()
